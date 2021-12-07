@@ -1,0 +1,109 @@
+#page, #pageheader, #pagenav, #pagenavul, #articlecenter, #asideright{
+    margin:0;
+    padding:0;
+}
+
+#page{
+    width:100%;
+    margin:auto;
+}
+
+#pagefooter{
+    margin-top: 2em;
+}
+
+#pageheader{
+    border-bottom:black 3px solid;
+    border-top: black 3px solid;
+}
+
+
+#pageheader,  #pagenav{
+    margin-top:1em;
+    margin-bottom:1em;
+}
+
+
+#pageheader, #pagefooter{
+    text-align: center;
+}
+
+
+#pagenav li{
+    border:black solid thin;
+    vertical-align: middle;
+    padding-top:0.8em;
+}
+
+#pagenav a{
+    margin:0;
+    padding:0;
+    height:2em;
+    text-decoration:none;
+    text-align: center;
+    color:black;
+}
+
+img {
+    width: 100%;
+    height: auto;
+}
+
+#asideright{
+    float: left;
+    position: relative;
+    width: 30%;
+}
+
+article{
+    float: left;
+    position: relative;
+    width: 70%;
+}
+
+ul li {
+    display: inline-block;
+    width: 11.5%;
+    text-align: center;
+    height: 30px;
+}
+
+li:hover{
+    background-color: #32a887;
+}
+
+@media screen and (max-width: 1200px) {
+    ul li {
+        display: inline-block;
+        width: 23%;
+        text-align: center;
+        height: 30px;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    ul li {
+        display: inline-block;
+        width: 46%;
+        text-align: center;
+        height: 30px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    ul li {
+        display: inline-block;
+        width: 100%;
+        text-align: center;
+        height: 30px;
+    }
+
+    #asideright{
+        float: none;
+    }
+
+    article{
+        float: none;
+    }
+}
+
